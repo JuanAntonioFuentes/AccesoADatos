@@ -5,7 +5,7 @@ public class Ejemplo6 {
         try {
             
         
-        RandomAccessFile file = new RandomAccessFile("./Bloque1/tema1/casoPractico/abecedario.txt", "rw");
+        RandomAccessFile file = new RandomAccessFile("./casoPractico/abecedario.txt", "rw");
         file.seek(5);
 
         System.out.println("Puntero Antes de leer: " + file.getFilePointer());
