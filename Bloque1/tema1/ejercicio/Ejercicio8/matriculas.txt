@@ -1,0 +1,9 @@
+----- Formulario de Matriculación -----
+Nombre y Apellidos: juan antonio
+Email: @gmail.com
+Fecha de Nacimiento: 11042006
+Género: Masculino
+Titulación de Acceso: superior
+Observaciones:
+na
+------------------------------------

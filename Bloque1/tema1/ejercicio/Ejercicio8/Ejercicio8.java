@@ -60,13 +60,14 @@ public class Ejercicio8 {
 
         } else if (opcion == 2) {
             try {
-                BufferedReader br = new BufferedReader(new FileReader("matricula.txt"));
+                BufferedReader br = new BufferedReader(new FileReader("./Ejercicio8/matriculas.txt"));
                 String linea;
                 while ((linea = br.readLine()) != null) {
                     System.out.println(linea);
                 }
                 br.close();
             } catch (IOException e) {
+                System.out.println("Algo fallo al leer");
             }
         }
 

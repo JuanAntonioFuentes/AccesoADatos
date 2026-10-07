@@ -2,7 +2,6 @@ package ejercicio.Ejercicio3;
 
 import java.io.FileWriter;
 import java.io.RandomAccessFile;
-import java.net.Socket;
 import java.util.Scanner;
 
 public class Ejercicio3 {
@@ -24,18 +23,13 @@ public class Ejercicio3 {
         char caracter = sc.next().charAt(0);
 
 
-
-        byte[] caracteres = new byte[1];
-        for (int i = 0; i < caracteres.length; i++) {
-            caracteres[i]= (byte)caracter;
-        }
         
 
         RandomAccessFile sobreExcribir = new RandomAccessFile("./ejercicio/Ejercicio3/abecedario.txt", "rw");
 
         sobreExcribir.seek(posicion);
 
-        sobreExcribir.write(caracteres);
+        sobreExcribir.write(caracter);
 
 
         sc.close();sobreExcribir.close();
