@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE universo_marvel [
+<!ELEMENT universo_marvel (saga+)>
+<!ELEMENT saga (nombre, peliculas)>
+<!ATTLIST saga orden CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT peliculas (pelicula+)>
+<!ELEMENT pelicula (titulo, duracion, director, ano)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+]>
+
+<universo_marvel>
+    <saga orden="1">
+        <nombre>La Saga del Infinito</nombre>
+        <peliculas>
+            <pelicula>
+                <titulo>Iron Man</titulo>
+                <duracion>126 min</duracion>
+                <director>Jon Favreau</director>
+                <ano>2008</ano>
+            </pelicula>
+            <pelicula>
+                <titulo>Capitán América: El Primer Vengador</titulo>
+                <duracion>124 min</duracion>
+                <director>Joe Johnston</director>
+                <ano>2011</ano>
+            </pelicula>
+            <pelicula>
+                <titulo>Vengadores: Endgame</titulo>
+                <duracion>181 min</duracion>
+                <director>Anthony y Joe Russo</director>
+                <ano>2019</ano>
+            </pelicula>
+        </peliculas>
+    </saga>
+    <saga orden="2">
+        <nombre>La Saga del Multiverso</nombre>
+        <peliculas>
+            <pelicula>
+                <titulo>Spider-Man: No Way Home</titulo>
+                <duracion>148 min</duracion>
+                <director>Jon Watts</director>
+                <ano>2021</ano>
+            </pelicula>
+            <pelicula>
+                <titulo>Doctor Strange en el Multiverso de la Locura</titulo>
+                <duracion>126 min</duracion>
+                <director>Sam Raimi</director>
+                <ano>2022</ano>
+            </pelicula>
+            <pelicula>
+                <titulo>Guardianes de la Galaxia Vol. 3</titulo>
+                <duracion>150 min</duracion>
+                <director>James Gunn</director>
+                <ano>2023</ano>
+            </pelicula>
+        </peliculas>
+    </saga>
+    <saga orden="3">
+        <nombre>La Saga Mutante (X-Men)</nombre>
+        <peliculas>
+            <pelicula>
+                <titulo>X-Men</titulo>
+                <duracion>104 min</duracion>
+                <director>Bryan Singer</director>
+                <ano>2000</ano>
+            </pelicula>
+            <pelicula>
+                <titulo>X-Men: Días del futuro pasado</titulo>
+                <duracion>132 min</duracion>
+                <director>Bryan Singer</director>
+                <ano>2014</ano>
+            </pelicula>
+            <pelicula>
+                <titulo>Logan</titulo>
+                <duracion>137 min</duracion>
+                <director>James Mangold</director>
+                <ano>2017</ano>
+            </pelicula>
+        </peliculas>
+    </saga>
+</universo_marvel>
